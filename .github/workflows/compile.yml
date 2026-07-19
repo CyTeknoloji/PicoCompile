@@ -45,7 +45,7 @@ jobs:
           CLI=./bin/arduino-cli
           $CLI config add board_manager.additional_urls https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json
           $CLI core update-index
-          $CLI core install rp2040:rp2040
+          $CLI core install rp2040:rp2040@5.7.0
 
           install_one() {
             local trim_lib="$1"
